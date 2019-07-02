@@ -3,6 +3,7 @@ package com.modulo4;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.guichaguri.trackplayer.TrackPlayer;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -24,7 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
+            new TrackPlayer(),
+            new MainReactPackage(),
             new VectorIconsPackage(),
             new RNGestureHandlerPackage()
       );
